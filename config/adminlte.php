@@ -376,6 +376,30 @@ return [
                 ],
             ],
         ],
+
+                [
+            'text' => 'Crear Curso / Materia',
+            'icon' => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'Asignar docentes',
+                    'url' => '#',
+                ],
+                [
+                    'text' => 'Listar materias',
+                    'url' => '#',
+                ],
+                [
+                    'text' => 'Editar información',
+                    'url' => '#',
+                ],
+                [
+                    'text' => 'Dar de baja materias',
+                    'url' => '#',
+                ],
+            ],
+        ],
+
         ['header' => 'labels'],
         [
             'text' => 'important',
