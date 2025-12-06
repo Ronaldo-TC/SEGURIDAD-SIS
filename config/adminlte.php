@@ -377,28 +377,33 @@ return [
             ],
         ],
 
-                [
+        // ---------------------------------------------------------
+        // SECCION PARA CURSO_MATERIA
+        // ---------------------------------------------------------
+
+        [
             'text' => 'Crear Curso / Materia',
             'icon' => 'fas fa-fw fa-share',
             'submenu' => [
                 [
                     'text' => 'Asignar docentes',
-                    'url' => '#',
+                    'url' => 'curso_materia.asignar_docente',
                 ],
                 [
                     'text' => 'Listar materias',
-                    'url' => '#',
+                    'url' => 'curso_materia.listar_materias',
                 ],
                 [
                     'text' => 'Editar información',
-                    'url' => '#',
+                    'url' => 'curso_materia.editar_informacion',
                 ],
                 [
                     'text' => 'Dar de baja materias',
-                    'url' => '#',
+                    'url' => 'curso_materia.baja_materias',
                 ],
             ],
         ],
+
 
         ['header' => 'labels'],
         [

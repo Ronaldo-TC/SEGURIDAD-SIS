@@ -17,4 +17,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// ---------------------------------------------------------
+// RUTAS ESTÁTICAS PARA CURSO_MATERIA
+// ---------------------------------------------------------
+
+Route::view('/curso_materia', 'curso_materia.asignar_docente')->name('curso_materia.asignar_docente');
+Route::view('/curso_materia/crear', 'curso_materia.baja_materias')->name('curso_materia.baja_materias');
+Route::view('/curso_materia/editar', 'curso_materia.editar_informacion')->name('curso_materia.editar_informacion');
+Route::view('/curso_materia/info', 'curso_materia.listar_materias')->name('curso_materia.listar_materias');
+
 require __DIR__.'/auth.php';
